@@ -18,7 +18,7 @@ fraction of a cent.
 ## Setup
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/ask-cli.git
+git clone https://github.com/tamliam201/ask-cli.git
 cd ask-cli
 npm install
 ```
