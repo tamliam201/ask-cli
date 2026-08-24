@@ -1,0 +1,16 @@
+{
+  "name": "ask-cli",
+  "version": "1.0.0",
+  "description": "Ask a question from the terminal and get an answer from the Claude API",
+  "main": "ask.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Liam Tam",
+  "license": "ISC",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.120.0"
+  }
+}
