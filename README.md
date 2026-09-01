@@ -108,9 +108,9 @@ Three things keep the per-question cost down:
 - **A concise system prompt.** Output tokens are five times the price of input
   tokens and dominate the bill, so the script asks for direct answers without
   preamble or filler.
-- **Medium reasoning effort.** Terminal questions rarely need maximum
-  deliberation. This cuts internal reasoning tokens with no noticeable quality
-  loss at this scale.
+- **Full reasoning effort, kept on purpose.** Effort stays at `high` rather than
+  being stepped down. Answer quality matters more here than the token savings,
+  so this is one cost lever deliberately left on the table.
 - **A 6-exchange history cap.** Conversation history is resent in full on every
   request, so an uncapped history would make cost grow quadratically. Capping it
   keeps cost flat no matter how long you keep talking.

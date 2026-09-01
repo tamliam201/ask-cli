@@ -65,9 +65,7 @@ const response = await client.messages.create({
   model: "claude-opus-5",
   max_tokens: 16000,
   system: SYSTEM_PROMPT,
-  // Terminal questions rarely need maximum deliberation. Medium effort cuts the
-  // reasoning tokens that dominate the bill without a noticeable quality drop.
-  output_config: { effort: "medium" },
+  output_config: { effort: "high" },
   // Caches the conversation prefix, which is resent in full every turn. Reads
   // are billed at a tenth of the normal input rate.
   cache_control: { type: "ephemeral" },
